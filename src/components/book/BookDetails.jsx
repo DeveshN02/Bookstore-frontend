@@ -45,7 +45,7 @@ function BookDetails() {
     formData.append("available", checked);
 
     await axios
-      .patch(`http://localhost:4000/books/updatebook/${id}`, formData, {
+      .patch(`${BASE_URl}/updatebook/${id}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data", // Set content type to multipart form data
         },
